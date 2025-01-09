@@ -1,0 +1,137 @@
+/* PINK NAV BAR */
+.navbar {
+  background-color: #e21b70;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.riderbag {
+  filter: invert(100%);
+  margin-left: 40vw;
+}
+
+.navtext {
+  color: white;
+  font-family: verdana;
+  font-weight: 1000;
+  font-size: larger;
+  margin-left: 3vw;
+}
+.navsignup {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  margin-left: 8vw;
+}
+
+.navsignup:hover {
+  background-color: white;
+  color: black;
+}
+/* WHITE NAV BAR  */
+.whitenavbar {
+  background-color: #ffffff;
+  align-items: center;
+  border: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+}
+
+.pandaimg {
+  border-radius: 10px;
+  margin-left: 10vw;
+}
+
+.whitenavtext {
+  color: #e21b70;
+  font-family: verdana;
+  font-weight: 1000;
+  font-size: larger;
+}
+.login {
+  border-color: black;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  margin: 4px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 30vw;
+}
+
+.login:hover:focus {
+  background-color: rgba(204, 193, 193, 0.69);
+  font-size: 25px;
+}
+
+.signup {
+  background-color: #e21b70;
+  color: white;
+  border-color: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 4px;
+  text-align: center;
+}
+.signup:hover {
+  font-size: 25px;
+}
+
+/* CITIES PORTION */
+/* .branches-portion {
+  margin: 5vw;
+  padding: 10vw;
+  display: grid;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} */
+
+.main-heading {
+  font-family: Arial black;
+  word-spacing: 1px;
+  margin: 8vw;
+  background-color: blue;
+}
+
+.image-card {
+ background-color: purple;
+}
+
+.card-img{border-radius: 30px;
+width: 300px;
+height: 200px
+display: ;}
+  
+
+.image-text {
+  background-color: white;
+  border-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  bottom: 40px;
+  left: 10px;
+  position: relative;
+} 
