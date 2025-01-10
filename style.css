@@ -95,8 +95,8 @@
 }
 
 /* CITIES PORTION */
-/* .branches-portion {
-  margin: 5vw;
+/* .branches-portion{ background-color: aqua; */
+/* margin: 5vw;
   padding: 10vw;
   display: grid;
   gap: 50px;
@@ -104,26 +104,22 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-} */
-
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+/* } 
 .main-heading {
   font-family: Arial black;
   word-spacing: 1px;
   margin: 8vw;
   background-color: blue;
 }
-
 .image-card {
  background-color: purple;
 }
-
 .card-img{border-radius: 30px;
 width: 300px;
 height: 200px
-display: ;}
-  
-
+display: ;
+}
 .image-text {
   background-color: white;
   border-color: white;
@@ -134,4 +130,39 @@ display: ;}
   bottom: 40px;
   left: 10px;
   position: relative;
-} 
+}  */
+*/ .branches-portion {
+  background-color: aqua;
+margin: 10px;
+  display: flexbox;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  position: relative;
+}
+.card-img {
+  border-radius: 30px;
+  /* background-color: aqua; */
+  height: 20%;
+  display:block;
+  }
+  
+.image-card {
+  background-color: purple;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+
+}
+
+.image-text {
+  background-color: rgb(37, 195, 39);
+  border-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  bottom: 80px;
+  left: 10px;
+  position: relative;
+}
