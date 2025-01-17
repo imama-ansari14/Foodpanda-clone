@@ -1,9 +1,15 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* PINK NAV BAR */
 .navbar {
   background-color: #e21b70;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  padding: 10px 5%;
   display: flex;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -25,7 +31,7 @@
   border-color: white;
   transition-duration: 0.2s;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 10px;
   padding: 18px;
   text-align: center;
@@ -41,21 +47,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* position: sticky; */
   background-color: white;
   padding: 10px 20px;
   border-bottom: 1px solid white;
   box-sizing: border-box;
-  box-shadow: 10px rgb(181, 181, 231);
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
 }
-
+.nav-left {
+  position: relative;
+  right: 250px;
+}
 .pandaimg {
-  display: flex;
   align-items: center;
-}
-.pandaimg img {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
+  width: 30px;
+  height: 28px;
+  border-radius: 5px;
 }
 .whitenavtext {
   color: #e21b70;
@@ -63,12 +70,10 @@
   font-size: 20px;
   font-weight: bold;
 }
-
 .nav-right {
-  display: flex;
-  align-items: center;
+  position: relative;
+  left: 280px;
 }
-
 .login {
   border: 1px solid #333;
   background-color: transparent;
@@ -80,12 +85,10 @@
   margin-right: 10px;
   font-weight: bold;
 }
-
-.login:hover:focus {
+.login:hover {
   background-color: rgba(204, 193, 193, 0.69);
-  font-size: 25px;
+  background-blend-mode: multiply;
 }
-
 .signup {
   width: 80px;
   height: 45px;
@@ -99,127 +102,59 @@
   color: white;
   margin-left: 15px;
 }
-/* .signup:hover {
-  font-size: 25px;
-} */
+.signup:hover {
+  background-color: rgb(138, 1, 47);
+  background-blend-mode: multiply;
+}
 .dropdown {
-  display: flex;
   align-items: center;
   background-color: #fff;
-  border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 22px;
   color: #333;
-  padding: 10px 15px;
+  padding: 5px 10px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-right: 5px;
+  display: inline-block;
 }
-
 .browserlogo {
-  width: 30px;
-  margin-right: 5px;
-}
-.arrow-icon {
-  border: solid #e21b70;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  margin-left: 5px;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 110%;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 10px;
-  z-index: 10;
-  width: 150px;
-  display: block;
-}
-.dropdown-item {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  font-size: 16px;
-  color: #333;
-  cursor: pointer;
-  border-radius: 5px;
+  width: 40px;
 }
-.dropdown:hover {
-  background-color: #f8f8f8;
-}
-
-.en {
-  font-weight: bolder;
-  margin-left: 5px;
-}
-
-.arrow-icon {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-.chk-icon {
-  color: #ff007f;
-  width: 30px;
-
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  border: 2px solid #e6007e;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  margin-left: 8px;
-  visibility: hidden;
-}
-
 .basket-logo {
   width: 40px;
-  margin-left: 125px;
-  text-align: center;
 }
+
 /* HERO SECTION */
 
 .hero-sec {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding: 0px 10%;
   background-color: #f7f7f7;
+  width: 80%;
 }
-
 .left-sec {
   max-width: 50%;
 }
-
 .hero-text {
   font-size: 3em;
   margin-bottom: 15px;
 }
-
 .text-inp {
   display: flex;
   margin-top: 10px;
 }
-
 .inp-locate {
   padding: 10px;
   border: 1px solid #ddd;
   flex: 1;
   border-radius: 5px 0 0 5px;
 }
-
 .pandaandfood {
-  width: 90%;
+  width: 100%;
   position: relative;
-  left: 50%;
+  left: 15%;
 }
 
 /* SECOND HERO SECTION  */
@@ -232,14 +167,13 @@
   margin-left: 80px;
   padding-left: 70px;
 }
-
 .chef-img {
   width: 100%;
   height: 600px;
 }
-
 .box {
   background-color: white;
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
   border-radius: 15px;
   width: 500px;
   height: 200px;
@@ -250,20 +184,84 @@
 }
 .started {
   width: 90px;
-  height: 50px;
+  height: 45px;
   background-color: #e21b70;
   font-size: 15px;
   border-radius: 10px;
   color: black;
   margin: 4px;
+  padding: 2px;
   text-align: center;
   border: none;
   color: white;
   margin-left: 15px;
 }
-/* CITIES PORTION */
-/* .branches-portion{ background-color: aqua; */
-/* margin: 5vw;
+.started:hover {
+  background-color: rgb(138, 1, 47);
+  background-blend-mode: multiply;
+}
+
+      /* CITIES PORTION */
+.cities-sec {
+  background-color: aqua;
+   margin: 70px;
+  /* width: 100%;
+    height: 255vh;  */
+}
+
+.main-heading {
+  font-size: 30px;
+}
+.container {
+  display: inline-flex;
+  border: 2px solid black;
+}
+.cards {
+  height: 270px;
+  min-width: 230px;
+  max-width: 230px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  
+}
+
+.citycard-img {
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3 ease;
+  border-radius: 20px;
+  /* margin: 0; */
+  /* display: inline-block; */
+}
+.citycard-img:hover {
+  transform: scale(1.1);
+ 
+  border-radius: 20px;
+}
+.image-text {
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+  font-size: 1.3rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* end */
+
+/* .main-heading{margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+.branches-portion{ background-color: aqua;
+margin: 5vw;
   padding: 10vw;
   display: grid;
   gap: 50px;
@@ -271,8 +269,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-/* } 
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  }
+
 .main-heading {
   font-family: Arial black;
   word-spacing: 1px;
@@ -297,8 +295,8 @@ display: ;
   bottom: 40px;
   left: 10px;
   position: relative;
-}  */
-*/ .branches-portion {
+}  
+.branches-portion {
   background-color: aqua;
   margin: 10px;
   display: flexbox;
@@ -308,8 +306,8 @@ display: ;
 }
 .card-img {
   border-radius: 30px;
-  /* background-color: aqua; */
-  height: 20%;
+   background-color: aqua; 
+   height: 20%;
   display: block;
 }
 
@@ -331,4 +329,4 @@ display: ;
   bottom: 80px;
   left: 10px;
   position: relative;
-}
+}  */
