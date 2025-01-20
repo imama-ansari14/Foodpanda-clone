@@ -47,7 +47,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: sticky; */
   background-color: white;
   padding: 10px 20px;
   border-bottom: 1px solid white;
@@ -247,25 +246,52 @@ body {
 }
 
      /* DOWNLOAD SECTION */
-.down-sec{margin: 0px;}
+.down-sec{margin: 0px;
+}
 .down-head{margin-left: 70px;
-padding-left: 50px;
+padding-left: 60px;
 }
-.down-box{background-color: #e21b70;
-border-radius: 20px;
-margin: 120px;
-padding: 30px 20px;
+.whole-cont{background-color: #e21b70;
+  color: white; 
+  border-radius: 20px;
+  margin:10px 120px;
+  padding: 30px;
+  width: 75%;
+  height: 25%;
+z-index: 1;
 }
-.down-text{
-
+.down-left{flex: 1;
+  max-width: 500px;
+  text-align: left;
 }
-
-.down-img{ width: 5%;
-margin: 20px;
+.down-ali{ display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
-
-
+.down-img{ width: 14%;
+margin: 10px 3px;
+padding:10px;
+border: 1px solid white;
+border-radius: 6px;
+}
+.para{
+display: flex;
+justify-content: center;
+margin-left: 40px; */
+margin-top: 120px;
+}
+.apple{width: 120px;
+  margin: 10px;
+}
+.down-right{position: absolute;
+right: 100px;
+}
+.foodpanda-mob{
+  width: 555px;
+  position: relative;
+  right: 85px;
+  bottom: 350px;
+}
 
 
      /* OFFICE SECTION */
@@ -296,7 +322,37 @@ margin: 20px;
 .text-heading{color: rgb(62, 59, 59);}
 .text-para{color: rgb(52, 47, 47);}
 .check{color: #e21b70;}
+ .text-para a{color: #e21b70;}
 
 
+        /* /* FOOTER  */
+.footer-top{margin: 0px 130px;}        
+        .container {margin: 0px 150px;
+          text-align: center;
+           display: flex;
+          justify-content: space-between; 
+          color: black;
+        }
+        .column {
+          display: flex;
+          flex-direction: column; 
+        }
+        .column a {
+          margin-bottom: 10px; 
+          text-decoration: none; 
+           color: black;
+           }
+.footer-bottom{margin: 0px 130px;
 
- a{color: #e21b70;}
+}
+.fimg-sec{
+
+}        
+.delivery-hero{ width: 30px;
+  height: 28px;
+}
+.delivery-hero{color:#D61F26;
+font-family: verdana;}{position: absolute;
+left: 600px;}
+.right{position: absolute;
+left: 1000px;}
